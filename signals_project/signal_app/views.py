@@ -1,5 +1,9 @@
+from django.shortcuts import render
 from django.http import JsonResponse
 from signal_app.models import Rectangle  
+
+def homepage(request):
+    return render(request,'homepage.html')
 
 def rectangle_list(request):
     # Fetch all instances of Rectangle

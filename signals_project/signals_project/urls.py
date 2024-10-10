@@ -16,9 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from signal_app.views import rectangle_list  
+from signal_app.views import rectangle_list,homepage  
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', homepage, name='home'),
     path('rectangles/', rectangle_list, name='rectangle_list'),  
 ]
