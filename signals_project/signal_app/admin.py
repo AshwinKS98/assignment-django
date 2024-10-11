@@ -1,7 +1,7 @@
 from django.contrib import admin
-from .models import YourModel,Rectangle
-@admin.register(YourModel)
-class YourModelAdmin(admin.ModelAdmin):
+from .models import sig,Rectangle
+@admin.register(sig)
+class sigAdmin(admin.ModelAdmin):
     list_display = ('name',)  
 
 
